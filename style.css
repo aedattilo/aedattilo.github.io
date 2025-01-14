@@ -1,0 +1,392 @@
+/*Style sheet for personal website
+2025 Anne Dattilo
+I wrote this all myself so it is shitty!!!!*/
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+body {
+    text-align: center;
+    margin: 1em;
+/*    font-family: 'Courier New', Courier, monospace;*/
+    font-family: Doto;
+    font-weight: 700;
+    background-color: #f9ddf0;
+
+/*    padding: 16px 24px;*/
+
+    --bodyTextColor: #90839c;
+    --postBgColor: #cab1da; 
+    --innerColor: #fff9fe;
+    --bordersColor: #95839c;
+    --boxShadowsColor: #efc4cf;
+    --buttonColor: #e69bca;
+}
+
+.container {
+    position: relative; /* Establishes a positioning context */
+    margin: 50px auto;
+    padding: 20px;
+    height: 400px;
+    width: 500px;
+    background-color: var(--postBgColor);
+
+    box-shadow:
+        /* Bottom Right */
+        5px 15px var(--postBgColor),
+        10px 10px var(--postBgColor),
+        5px 20px var(--bordersColor),
+        10px 15px var(--bordersColor),
+        /* Bottom Left */
+        10px 15px var(--postBgColor),
+        -10px 10px var(--postBgColor),
+        -5px 15px var(--postBgColor),
+        -10px 15px var(--bordersColor),
+        -5px 20px var(--bordersColor),
+        /* Top Left */
+        -5px 0px var(--postBgColor),
+        -5px -5px var(--bordersColor),
+        -10px 5px var(--postBgColor),
+        -10px 0px var(--bordersColor),
+        -15px 5px var(--bordersColor),
+        -15px 10px var(--bordersColor),
+        /* Top Right */
+        5px 0px var(--postBgColor),
+        5px -5px var(--bordersColor),
+        10px 5px var(--postBgColor),
+        10px 0px var(--bordersColor),
+        15px 5px var(--bordersColor),
+        15px 10px var(--bordersColor),
+
+        0px 10px var(--bordersColor),
+        0px 0px 0px 5px var(--bordersColor);
+    margin: 100px auto;
+    -webkit-filter: drop-shadow(20px 20px 0 var(--boxShadowsColor));
+    filter: drop-shadow(20px 20px 0 var(--boxShadowsColor));
+}
+
+.box {
+    position: absolute; /* Positions boxes relative to .container */
+/*    width: 50%;*/
+/*    height: 200px;*/
+    color: var(--bordersColor);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left:15px;
+/*    margin-bottom: 50px auto;*/
+}
+
+.boxContent {
+    background-color: var(--innerColor);
+    border: 3px solid var(--bordersColor);
+    border-radius: 10px;
+    top: 100px; /* Positioning from the top */
+    left: 5px; /* Positioning from the left */
+    width: 490px;
+    height: 250px;
+    padding-right:15px;
+    text-align: left;
+}
+
+.boxContentLeft {
+    background-color: var(--innerColor);
+    border: 3px solid var(--bordersColor);
+    border-radius: 10px;
+    top: 100px; /* Positioning from the top */
+    left: 5px; /* Positioning from the left */
+    width: 240px;
+    height: 250px;
+    padding-right:15px;
+    text-align: left;
+}
+
+.boxPic {
+    background:url('images/IMG_2461.jpg') no-repeat center top;
+    background-size: 100% auto;
+    border: 3px solid var(--bordersColor);
+    border-radius: 49%;
+    top: 125px; /* Positioning from the top */
+    left: 300px; /* Positioning from the left */
+    width: 205px;
+    height: 205px;
+/*    padding-right:15px;*/
+}
+
+.boxHeader {
+    background-color: var(--innerColor);
+    border: 3px solid var(--bordersColor);
+    border-radius: 50px;
+    top: 20px; /* Positioning from the top */
+    left: 5px; /* Positioning from the left */
+    width: 490px;
+    height: 50px;
+    padding-right:15px;
+}
+
+.boxClickyLeft {
+    color: var(--innerColor);
+    background-color: var(--buttonColor);
+    border: 3px solid var(--bordersColor);
+    border-radius: 50px;
+    top: 85%; /* Positioning from the top */
+    left: 5px; /* Positioning from the left */
+    width: 130px;
+    height: 50px;
+    padding-left: 5;
+    padding-right: 5;
+/*    margin:2em;*/
+}
+
+.boxClickyMiddle {
+    color: var(--innerColor);
+    background-color: var(--buttonColor);
+    border: 3px solid var(--bordersColor);
+    border-radius: 50px;
+    top: 85%; /* Positioning from the top */
+    left: 190px; /* Positioning from the left */
+    width: 130px;
+    height: 50px;
+    padding-left: 5;
+    padding-right: 5;
+/*    margin:2em;*/
+}
+
+.boxClickyRight {
+    color: var(--innerColor);
+    background-color: var(--buttonColor);
+    border: 3px solid var(--bordersColor);
+    border-radius: 50px;
+    top: 85%; /* Positioning from the top */
+    left: 380px; /* Positioning from the left */
+    width: 130px;
+    height: 50px;
+    padding-left: 5;
+    padding-right: 5;
+/*    margin:2em;*/
+}
+
+.boxTab1Clicked {
+    top: -80px; /* Positioning from the top */
+    left: 210px; /* Positioning from the left */
+    height: 20px;
+    width: 90px;
+    padding-left: 0;
+    background-color: var(--postBgColor);
+    color: black;
+
+
+    box-shadow:
+        -10px 20px var(--postBgColor),
+        10px 20px var(--postBgColor),
+
+         /*Top Left */
+        -5px 0px var(--postBgColor),
+        -5px -5px var(--bordersColor),
+        -10px 5px var(--postBgColor),
+        -10px 0px var(--bordersColor),
+        -15px 5px var(--bordersColor),
+        -15px 10px var(--bordersColor),
+         /*Top Right */
+        5px 0px var(--postBgColor),
+        5px -5px var(--bordersColor),
+        10px 5px var(--postBgColor),
+        10px 0px var(--bordersColor),
+        15px 5px var(--bordersColor),
+        15px 10px var(--bordersColor),
+
+        0px 10px var(--bordersColor),
+        0px 0px 0px 5px var(--bordersColor);
+    margin: 50px auto;
+}
+
+.boxTab1 {
+    top: -80px; /* Positioning from the top */
+    left: 210px; /* Positioning from the left */
+    height: 20px;
+    width: 90px;
+    padding-left: 0;
+    background-color: var(--buttonColor);
+    color: black;
+
+    box-shadow:
+/*            -10px 20px var(--buttonColor),*/
+/*            10px 20px var(--buttonColor),*/
+
+         /*Top Left */
+        -5px 0px var(--buttonColor),
+        -5px -5px var(--bordersColor),
+        -10px 5px var(--buttonColor),
+        -10px 0px var(--bordersColor),
+        -15px 5px var(--bordersColor),
+        -15px 10px var(--bordersColor),
+         /*Top Right */
+        5px 0px var(--buttonColor),
+        5px -5px var(--bordersColor),
+        10px 5px var(--buttonColor),
+        10px 0px var(--bordersColor),
+        15px 5px var(--bordersColor),
+        15px 10px var(--bordersColor),
+
+        0px 10px var(--bordersColor),
+        0px 0px 0px 5px var(--bordersColor);
+    margin: 50px auto;
+}
+
+.boxTab2Clicked {
+    top: -80px; /* Positioning from the top */
+    left: 325px; /* Positioning from the left */
+    height: 20px;
+    width: 90px;
+    padding-left: 0;
+    background-color: var(--postBgColor);
+    color: black;
+
+    box-shadow:
+        -10px 20px var(--postBgColor),
+        10px 20px var(--postBgColor),
+         /*Top Left */
+        -5px 0px var(--postBgColor),
+        -5px -5px var(--bordersColor),
+        -10px 5px var(--postBgColor),
+        -10px 0px var(--bordersColor),
+        -15px 5px var(--bordersColor),
+        -15px 10px var(--bordersColor),
+         /*Top Right */
+        5px 0px var(--postBgColor),
+        5px -5px var(--bordersColor),
+        10px 5px var(--postBgColor),
+        10px 0px var(--bordersColor),
+        15px 5px var(--bordersColor),
+        15px 10px var(--bordersColor),
+
+        0px 10px var(--bordersColor),
+        0px 0px 0px 5px var(--bordersColor);
+    margin: 50px auto;
+}
+
+.boxTab2 {
+    top: -80px; /* Positioning from the top */
+    left: 325px; /* Positioning from the left */
+    height: 20px;
+    width: 90px;
+    padding-left: 0;
+    background-color: var(--buttonColor);
+    color: black;
+
+    box-shadow:
+        /*Top Left */
+        -5px 0px var(--buttonColor),
+        -5px -5px var(--bordersColor),
+        -10px 5px var(--buttonColor),
+        -10px 0px var(--bordersColor),
+        -15px 5px var(--bordersColor),
+        -15px 10px var(--bordersColor),
+         /*Top Right */
+        5px 0px var(--buttonColor),
+        5px -5px var(--bordersColor),
+        10px 5px var(--buttonColor),
+        10px 0px var(--bordersColor),
+        15px 5px var(--bordersColor),
+        15px 10px var(--bordersColor),
+
+        0px 10px var(--bordersColor),
+        0px 0px 0px 5px var(--bordersColor);
+    margin: 50px auto;
+}
+
+.boxTab3Clicked {
+    top: -80px; /* Positioning from the top */
+    left: 440px; /* Positioning from the left */
+    height: 20px;
+    width: 90px;
+    padding-left: 0;
+    background-color: var(--postBgColor);
+    color: black;
+
+    box-shadow:
+        -10px 20px var(--postBgColor),
+        10px 20px var(--postBgColor),
+         /*Top Left */
+        -5px 0px var(--postBgColor),
+        -5px -5px var(--bordersColor),
+        -10px 5px var(--postBgColor),
+        -10px 0px var(--bordersColor),
+        -15px 5px var(--bordersColor),
+        -15px 10px var(--bordersColor),
+         /*Top Right */
+        5px 0px var(--postBgColor),
+        5px -5px var(--bordersColor),
+        10px 5px var(--postBgColor),
+        10px 0px var(--bordersColor),
+        15px 5px var(--bordersColor),
+        15px 10px var(--bordersColor),
+
+        0px 10px var(--bordersColor),
+        0px 0px 0px 5px var(--bordersColor);
+      margin: 50px auto;
+}
+
+.boxTab3 {
+    top: -80px; /* Positioning from the top */
+    left: 440px; /* Positioning from the left */
+    height: 20px;
+    width: 90px;
+    padding-left: 0;
+    background-color: var(--buttonColor);
+    color: black;
+
+    box-shadow:
+        /*Top Left */
+        -5px 0px var(--buttonColor),
+        -5px -5px var(--bordersColor),
+        -10px 5px var(--buttonColor),
+        -10px 0px var(--bordersColor),
+        -15px 5px var(--bordersColor),
+        -15px 10px var(--bordersColor),
+         /*Top Right */
+        5px 0px var(--buttonColor),
+        5px -5px var(--bordersColor),
+        10px 5px var(--buttonColor),
+        10px 0px var(--bordersColor),
+        15px 5px var(--bordersColor),
+        15px 10px var(--bordersColor),
+
+        0px 10px var(--bordersColor),
+        0px 0px 0px 5px var(--bordersColor);
+    margin: 50px auto;
+}
+
+/* Specific header and footer styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--buttonColor);
+    color: var(--innerColor);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--buttonColor);
+    color: var(--innerColor);
+}
+
+/* Additional link styles for navigation */
+nav {
+    margin: 20px 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 0;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
