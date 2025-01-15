@@ -101,7 +101,7 @@ body {
 }
 
 .boxPic {
-    background:url('images/IMG_2461.jpg') no-repeat center top;
+    background:url('../../images/IMG_5049.jpg') no-repeat center top;
     background-size: 100% auto;
     border: 3px solid var(--bordersColor);
     border-radius: 49%;
